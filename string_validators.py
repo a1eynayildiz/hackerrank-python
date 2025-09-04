@@ -7,7 +7,7 @@ if __name__ == '__main__':
     print(any(c.islower()for c in s))
     print(any(c.isupper()for c in s))
 
-#daha temiz bir yolu varmış.....
+#okunabilirliği az ama tek satırda.....
 s = input().strip()
 print(*(any(f(s) for f in [str.isalnum, str.isalpha, str.isdigit, str.islower, str.isupper])), sep='\n')
 
