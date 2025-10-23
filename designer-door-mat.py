@@ -1,7 +1,8 @@
 t = '-'
 s = '.|.'
-boy, en = map(int, input().split())
-for i in range(boy//2):
-    pattern = s * (2*i + 1)  
-    line = pattern.center(en, t)
-    print(line)
+N, M = map(int, input().split())
+for i in range(1, N, 2):
+    print((s * i).center(M, t))
+print("WELCOME".center(M, t))
+for i in range(N - 2, 0, -2):
+    print((s * i).center(M, t))
